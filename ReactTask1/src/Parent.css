@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+  justify-content: center;
+}
+
+.parentContent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 50px;
+}
