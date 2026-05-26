@@ -4,6 +4,7 @@ import FetchDataApi from "./Components/FetchDataApi";
 import ProfileImageUpload from "./Components/ProfileImageUpload";
 import Form from "./Components/Form";
 import "./App.css";
+import MiniChatApp from "./Components/MiniChatApp";
 
 export const FormContext = createContext();
 
@@ -27,7 +28,7 @@ function App() {
       {/* <FormValidation /> */}
       {/* <FetchDataApi /> */}
       {/* <ProfileImageUpload /> */}
-      <div style={{ padding: "20px" }}>
+      {/* <div style={{ padding: "20px" }}>
         <h1 style={{ textAlign: "center" }}>useContext Form Example</h1>
         <FormContext.Provider
           value={{
@@ -57,7 +58,8 @@ function App() {
             <strong>Mobile:</strong> {formData.mobile}
           </p>
         </div>
-      </div>
+      </div> */}
+      <MiniChatApp />
     </div>
   );
 }

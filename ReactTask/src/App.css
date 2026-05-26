@@ -15,7 +15,7 @@ body {
   padding: 20px;
 }
 
-.app.light {
+/* .app.light {
   background-color: #f4f6f9;
   color: black;
 }
@@ -23,7 +23,7 @@ body {
 .app.black {
   background-color: #121212;
   color: white;
-}
+} */
 
 .reg-form-container {
   width: 400px;
@@ -34,7 +34,7 @@ body {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.light {
+/* .light {
   background-color: white;
   color: black;
 }
@@ -42,7 +42,7 @@ body {
 .black {
   background-color: #1e1e1e;
   color: white;
-}
+} */
 
 .input-field {
   width: 100%;
