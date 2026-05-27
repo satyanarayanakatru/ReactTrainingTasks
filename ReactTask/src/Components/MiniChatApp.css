@@ -4,14 +4,14 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #1d2671, #c33764);
   font-family: "Poppins", sans-serif;
-}
+} */
 
 .chat-container {
   width: 420px;
