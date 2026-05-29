@@ -16,6 +16,8 @@ import AppDevelopment from "./Routing/AppDevelopment";
 import WebDevelopment from "./Routing/WebDevelopment";
 import UIUXDesign from "./Routing/UIUXDesign";
 import DigitalMarketing from "./Routing/DigitalMarketing";
+import UserListComponent from "./Components/UserList";
+import UserDetails from "./Components/UserDetails";
 
 export const FormContext = createContext();
 
@@ -94,7 +96,7 @@ function App() {
           </div>
         </div>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<UserListComponent />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />}>
@@ -104,6 +106,7 @@ function App() {
             <Route path="digitalmarketing" element={<DigitalMarketing />} />
           </Route>
           <Route path="/contact" element={<Contact />} />
+          <Route path="/users/:id" element={<UserDetails />} />
         </Routes>
       </BrowserRouter>
     </div>
