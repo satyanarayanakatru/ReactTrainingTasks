@@ -18,6 +18,7 @@ import UIUXDesign from "./Routing/UIUXDesign";
 import DigitalMarketing from "./Routing/DigitalMarketing";
 import UserListComponent from "./Components/UserList";
 import UserDetails from "./Components/UserDetails";
+import Pagination from "./Components/Pagination";
 
 export const FormContext = createContext();
 
@@ -96,7 +97,7 @@ function App() {
           </div>
         </div>
         <Routes>
-          <Route path="/" element={<UserListComponent />} />
+          <Route path="/" element={<Pagination />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />}>
