@@ -19,6 +19,8 @@ import DigitalMarketing from "./Routing/DigitalMarketing";
 import UserListComponent from "./Components/UserList";
 import UserDetails from "./Components/UserDetails";
 import Pagination from "./Components/Pagination";
+import ApiIntegration from "./Components/ApiIntegration";
+import ApiIntergration2 from "./Components/ApiIntergration2";
 
 export const FormContext = createContext();
 
@@ -97,8 +99,8 @@ function App() {
           </div>
         </div>
         <Routes>
-          <Route path="/" element={<Pagination />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/" element={<ApiIntegration />} />
+          <Route path="/profile" element={<ApiIntergration2 />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />}>
             <Route path="appdevelopment" element={<AppDevelopment />} />
