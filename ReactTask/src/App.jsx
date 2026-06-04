@@ -21,6 +21,7 @@ import UserDetails from "./Components/UserDetails";
 import Pagination from "./Components/Pagination";
 import ApiIntegration from "./Components/ApiIntegration";
 import ApiIntergration2 from "./Components/ApiIntergration2";
+import Crud from "./Components/Crud";
 
 export const FormContext = createContext();
 
@@ -84,7 +85,7 @@ function App() {
       )}
 
       <BrowserRouter>
-        <div className="header">
+        {/* <div className="header">
           <div className="logo">
             <Link to={"/"}>
               <img src={Logo} alt="Logo" width={400} />
@@ -97,9 +98,9 @@ function App() {
             <Link to={"/services"}>Services</Link>
             <Link to={"/contact"}>Contact</Link>
           </div>
-        </div>
+        </div> */}
         <Routes>
-          <Route path="/" element={<ApiIntegration />} />
+          <Route path="/" element={<Crud />} />
           <Route path="/profile" element={<ApiIntergration2 />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />}>
